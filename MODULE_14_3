@@ -60,6 +60,7 @@ async def main_menu(message):
 @dp.message_handler(text='Купить')
 async def main_menu(message):
     for i in range(1, 5):
+     #Нужные файлы прикреплены в репозитории под номерами 1, 2, 3, 4
         y = open(f"{i}.jpg", "rb")
         await message.answer_photo(y, f'Название: Product{i} | Описание: описание {i} | Цена: {i * 100}')
     await message.answer("Выберите продукт для покупки", reply_markup=okl)
