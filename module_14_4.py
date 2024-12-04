@@ -10,7 +10,7 @@ import asyncio
 import crud_functions as nb
 from pyexpat.errors import messages
 
-api = "7845066302:AAEnTfCL6wrzIwehoK9ZfhNo47S3B_ygKmM"
+api = ""
 bot = Bot(token=api)
 
 dp = Dispatcher(bot, storage=MemoryStorage())
